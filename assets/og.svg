@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="EX. — 量化研究 · 研究流程工程 | 作品集">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#122039"/>
+      <stop offset="1" stop-color="#1b2f54"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#ac)"/>
+
+  <polyline points="700,560 760,528 820,540 880,494 940,510 1000,462 1060,478 1120,430 1160,444"
+            fill="none" stroke="url(#ac)" stroke-width="3" stroke-opacity="0.5"/>
+  <polyline points="700,590 760,562 820,574 880,532 940,548 1000,506 1060,522 1120,478 1160,492"
+            fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.22"/>
+  <circle cx="1120" cy="430" r="5" fill="#38bdf8" fill-opacity="0.85"/>
+  <circle cx="1160" cy="444" r="5" fill="#a855f7" fill-opacity="0.85"/>
+
+  <g font-family="Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif">
+    <rect x="80" y="74" width="7" height="86" rx="3.5" fill="url(#ac)"/>
+    <text x="108" y="134" font-size="74" font-weight="800" fill="#ffffff" letter-spacing="2">EX.</text>
+    <text x="112" y="178" font-size="25" fill="#a9c1db">量化研究 · 研究流程工程　|　Quant research &amp; research-ops</text>
+
+    <text x="80" y="300" font-size="46" font-weight="700" fill="#ffffff">把研究方法变成能跑、能核、能复现的东西</text>
+    <text x="80" y="352" font-size="26" fill="#cfe3f7">六个开源项目：取数 · 分析 · 证据追踪 · 研报成稿</text>
+
+    <g font-size="21">
+      <rect x="80" y="404" width="196" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#38bdf8" stroke-opacity="0.4"/>
+      <text x="178" y="432" text-anchor="middle" fill="#cfe3f7">6 个开源项目</text>
+      <rect x="292" y="404" width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#38bdf8" stroke-opacity="0.4"/>
+      <text x="367" y="432" text-anchor="middle" fill="#cfe3f7">CI 全绿</text>
+      <rect x="458" y="404" width="216" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#a855f7" stroke-opacity="0.4"/>
+      <text x="566" y="432" text-anchor="middle" fill="#cfe3f7">700+ 项离线测试</text>
+      <rect x="690" y="404" width="232" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#a855f7" stroke-opacity="0.4"/>
+      <text x="806" y="432" text-anchor="middle" fill="#cfe3f7">零 API key 可跑通</text>
+    </g>
+
+    <text x="1120" y="596" font-size="22" text-anchor="end" fill="#7d94b3">lss680455-create.github.io</text>
+  </g>
+</svg>
