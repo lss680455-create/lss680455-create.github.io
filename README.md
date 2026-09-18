@@ -27,7 +27,9 @@
 静态展示页：HTML / CSS，无构建、无 JS、无外部依赖（字体与图标全部本地/系统资源）。
 
 - `index.html` — 单页作品集
-- `style.css` — 样式（深海军蓝 + 蓝紫渐变，与 profile banner 同一视觉语言）
-- `assets/` — banner、og 图、favicon、各项目预览图
+- `style.css` — 样式（浅色底 + 赛博朋克霓虹装饰：霓虹渐变 / HUD 角标 / 合成器网格 / 电路）
+- `assets/og.svg` → `og.png` — 社交分享图（1200×630）
+- `assets/deco/` — 装饰图：`hero-panel.svg`（终端 + 合成器网格）、`katakana-strip.svg`（侧边字带）、`divider.svg`（霓虹分隔线）
+- `assets/projects/` — 各项目预览图与旗舰案例图
 
 > 本页项目均为研究方法与工程流程示范，数据来自公开接口，不构成任何投资建议。

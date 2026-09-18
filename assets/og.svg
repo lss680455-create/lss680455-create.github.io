@@ -1,49 +1,124 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="EX. — 量化研究 · 研究流程工程 | 作品集">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="0.55" stop-color="#122039"/>
-      <stop offset="1" stop-color="#1b2f54"/>
+    <linearGradient id="nline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.55" stop-color="#E6007A"/>
+      <stop offset="1" stop-color="#7C3AED"/>
     </linearGradient>
-    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#a855f7"/>
+    <linearGradient id="gsun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE3F1"/>
+      <stop offset="1" stop-color="#FFB5DA"/>
     </linearGradient>
+    <radialGradient id="gtint" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mtint" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E6007A" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#E6007A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E6007A" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#E6007A" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
-      <path d="M44 0H0v44" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+      <path d="M44 0H0v44" fill="none" stroke="#0B0E1A" stroke-opacity="0.05" stroke-width="1"/>
     </pattern>
+    <mask id="sunmask">
+      <rect x="900" y="420" width="290" height="210" fill="#000"/>
+      <circle cx="1040" cy="520" r="64" fill="#fff"/>
+      <rect x="956" y="526" width="168" height="5" fill="#000"/>
+      <rect x="956" y="541" width="168" height="6" fill="#000"/>
+      <rect x="956" y="558" width="168" height="7" fill="#000"/>
+      <rect x="956" y="577" width="168" height="8" fill="#000"/>
+      <rect x="956" y="598" width="168" height="9" fill="#000"/>
+    </mask>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#F7F9FE"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect x="0" y="0" width="1200" height="4" fill="url(#ac)"/>
+  <ellipse cx="1090" cy="30" rx="430" ry="270" fill="url(#gtint)"/>
+  <ellipse cx="110" cy="620" rx="400" ry="250" fill="url(#mtint)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#nline)"/>
 
-  <polyline points="700,560 760,528 820,540 880,494 940,510 1000,462 1060,478 1120,430 1160,444"
-            fill="none" stroke="url(#ac)" stroke-width="3" stroke-opacity="0.5"/>
-  <polyline points="700,590 760,562 820,574 880,532 940,548 1000,506 1060,522 1120,478 1160,492"
-            fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.22"/>
-  <circle cx="1120" cy="430" r="5" fill="#38bdf8" fill-opacity="0.85"/>
-  <circle cx="1160" cy="444" r="5" fill="#a855f7" fill-opacity="0.85"/>
+  <!-- synthwave mini-scene -->
+  <ellipse cx="1040" cy="520" rx="180" ry="120" fill="url(#sunglow)"/>
+  <circle cx="1040" cy="520" r="64" fill="url(#gsun)" mask="url(#sunmask)" opacity="0.95"/>
+  <g stroke="#22D3EE" stroke-opacity="0.3" stroke-width="1">
+    <line x1="1040" y1="470" x2="680" y2="630"/>
+    <line x1="1040" y1="470" x2="770" y2="630"/>
+    <line x1="1040" y1="470" x2="860" y2="630"/>
+    <line x1="1040" y1="470" x2="950" y2="630"/>
+    <line x1="1040" y1="470" x2="1040" y2="630"/>
+    <line x1="1040" y1="470" x2="1130" y2="630"/>
+    <line x1="1040" y1="470" x2="1220" y2="630"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="535" x2="1200" y2="535"/>
+    <line x1="0" y1="575" x2="1200" y2="575"/>
+    <line x1="0" y1="620" x2="1200" y2="620"/>
+  </g>
+  <line x1="0" y1="560" x2="1200" y2="560" stroke="#E6007A" stroke-opacity="0.28" stroke-width="1"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="url(#nline)" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- corner brackets -->
+  <g fill="none" stroke-width="2">
+    <path d="M36 86 V36 H86" stroke="#06B6D4" stroke-opacity="0.9"/>
+    <path d="M1114 36 H1164 V86" stroke="#E6007A" stroke-opacity="0.85"/>
+    <path d="M36 544 V594 H86" stroke="#E6007A" stroke-opacity="0.85"/>
+    <path d="M1114 594 H1164 V544" stroke="#06B6D4" stroke-opacity="0.9"/>
+  </g>
+  <polygon points="1120,300 1130,310 1120,320 1110,310" fill="#7C3AED" fill-opacity="0.75"/>
 
   <g font-family="Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif">
-    <rect x="80" y="74" width="7" height="86" rx="3.5" fill="url(#ac)"/>
-    <text x="108" y="134" font-size="74" font-weight="800" fill="#ffffff" letter-spacing="2">EX.</text>
-    <text x="112" y="178" font-size="25" fill="#a9c1db">量化研究 · 研究流程工程　|　Quant research &amp; research-ops</text>
+    <!-- EX. glitch lockup -->
+    <g font-weight="800" font-size="72">
+      <text x="83" y="150" fill="#00E5FF" fill-opacity="0.5">EX.</text>
+      <text x="76" y="153" fill="#FF2D95" fill-opacity="0.5">EX.</text>
+      <text x="80" y="151" fill="#0B0E1A">EX.</text>
+    </g>
+    <text x="82" y="192" font-family="Consolas, ui-monospace, monospace" font-size="20" fill="#4A5468" letter-spacing="0.5">量化研究 · 研究流程工程 | QUANT RESEARCH &amp; RESEARCH-OPS</text>
 
-    <text x="80" y="300" font-size="46" font-weight="700" fill="#ffffff">把研究方法变成能跑、能核、能复现的东西</text>
-    <text x="80" y="352" font-size="26" fill="#cfe3f7">六个开源项目：取数 · 分析 · 证据追踪 · 研报成稿</text>
+    <text x="80" y="302" font-size="46" font-weight="800" fill="#0B0E1A">把研究方法变成能跑、能核、能复现的东西</text>
+    <text x="80" y="352" font-size="26" fill="#4A5468">六个开源项目：取数 · 分析 · 证据追踪 · 研报成稿</text>
 
-    <g font-size="21">
-      <rect x="80" y="404" width="196" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#38bdf8" stroke-opacity="0.4"/>
-      <text x="178" y="432" text-anchor="middle" fill="#cfe3f7">6 个开源项目</text>
-      <rect x="292" y="404" width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#38bdf8" stroke-opacity="0.4"/>
-      <text x="367" y="432" text-anchor="middle" fill="#cfe3f7">CI 全绿</text>
-      <rect x="458" y="404" width="216" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#a855f7" stroke-opacity="0.4"/>
-      <text x="566" y="432" text-anchor="middle" fill="#cfe3f7">700+ 项离线测试</text>
-      <rect x="690" y="404" width="232" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#a855f7" stroke-opacity="0.4"/>
-      <text x="806" y="432" text-anchor="middle" fill="#cfe3f7">零 API key 可跑通</text>
+    <!-- chips -->
+    <g font-size="19">
+      <rect x="80" y="396" width="170" height="46" rx="23" fill="#FFFFFF" stroke="#0B0E1A" stroke-opacity="0.18"/>
+      <rect x="100" y="412" width="11" height="11" fill="#22D3EE"/>
+      <text x="124" y="426" fill="#2A3247">6 个开源项目</text>
+      <rect x="266" y="396" width="124" height="46" rx="23" fill="#FFFFFF" stroke="#0B0E1A" stroke-opacity="0.18"/>
+      <rect x="286" y="412" width="11" height="11" fill="#E6007A"/>
+      <text x="310" y="426" fill="#2A3247">CI 全绿</text>
+      <rect x="406" y="396" width="196" height="46" rx="23" fill="#FFFFFF" stroke="#0B0E1A" stroke-opacity="0.18"/>
+      <rect x="426" y="412" width="11" height="11" fill="#7C3AED"/>
+      <text x="450" y="426" fill="#2A3247">700+ 项离线测试</text>
+      <rect x="618" y="396" width="222" height="46" rx="23" fill="#FFFFFF" stroke="#0B0E1A" stroke-opacity="0.18"/>
+      <rect x="638" y="412" width="11" height="11" fill="#22D3EE"/>
+      <text x="662" y="426" fill="#2A3247">零 API key 可跑通</text>
     </g>
 
-    <text x="1120" y="596" font-size="22" text-anchor="end" fill="#7d94b3">lss680455-create.github.io</text>
+    <!-- bottom row -->
+    <text x="82" y="560" font-family="Consolas, ui-monospace, monospace" font-size="17" fill="#69718A">lss680455-create.github.io</text>
+    <circle cx="1035" cy="554" r="5" fill="#00E676"/>
+    <text x="1048" y="559" font-family="Consolas, ui-monospace, monospace" font-size="16" fill="#69718A">SYS.ONLINE</text>
+  </g>
+
+  <!-- barcode -->
+  <g fill="#0B0E1A" fill-opacity="0.65">
+    <rect x="560" y="538" width="2" height="26"/>
+    <rect x="565" y="538" width="4" height="26"/>
+    <rect x="572" y="538" width="1.5" height="26"/>
+    <rect x="576" y="538" width="3" height="26"/>
+    <rect x="582" y="538" width="2" height="26"/>
+    <rect x="587" y="538" width="1.5" height="26"/>
+    <rect x="591" y="538" width="4" height="26"/>
+    <rect x="598" y="538" width="2" height="26"/>
+    <rect x="603" y="538" width="3" height="26"/>
+    <rect x="609" y="538" width="1.5" height="26"/>
+    <rect x="614" y="538" width="2" height="26"/>
+    <rect x="619" y="538" width="3" height="26"/>
+    <rect x="625" y="538" width="2" height="26"/>
+    <rect x="630" y="538" width="4" height="26"/>
+    <rect x="637" y="538" width="2" height="26"/>
   </g>
 </svg>
