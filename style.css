@@ -318,3 +318,26 @@ a:focus-visible{outline:2px solid var(--cy);outline-offset:2px;border-radius:4px
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important}
 }
+
+/* ---------------- print / PDF export ---------------- */
+@media print{
+  html{scroll-behavior:auto}
+  body{background:#fff;background-image:none;background-attachment:scroll}
+  .topbar,.skip,.side-strip{display:none!important}
+  .hero{padding-top:4px}
+  .hero-grid{display:block}
+  .hero-panel img{max-width:430px;margin:10px 0 0}
+  .grad{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+  .grad[data-text]::before,.grad[data-text]::after{display:none}
+  .mark{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+  .stats b{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+  .section{padding:16px 0 2px}
+  .card,.contrib,.stats{box-shadow:none}
+  .grid{grid-template-columns:1fr 1fr}
+  .grid .card,.contrib,.stats,.tbl tr,.hero-panel,.hero-copy{break-inside:avoid}
+  .card,.stats,.contrib,.tbl{border-color:#C9D2E3}
+  .case{overflow:visible;flex-wrap:wrap}
+  .case img{height:190px}
+  a{color:var(--ink);text-decoration:underline}
+  .upstream a,.footer a{color:var(--ink)}
+}
